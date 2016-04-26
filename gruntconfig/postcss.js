@@ -19,7 +19,8 @@ var postcss = {
       processors: [
         cssImport({
           path: [
-            CWD + '/' + config.src + '/htdocs'
+            CWD + '/' + config.src + '/htdocs',
+            NODE_MODULES + '/hazdev-webutils/src'  
             // TODO: node_modules dependencies
           ]
         }),
